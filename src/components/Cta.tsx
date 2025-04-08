@@ -7,7 +7,7 @@ const Cta = () => {
     "No long-term contracts required",
     "Transparent reporting & measurement",
     "Data-driven strategies that convert",
-    "Expert team with proven results"
+    "Affordable pricing with fast turnaround"
   ];
 
   return (
@@ -40,14 +40,14 @@ const Cta = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
-              className="bg-white text-convertly-blue hover:bg-gray-100 px-8 py-6 text-lg"
+              className="bg-white text-convertly-blue hover:bg-gray-100 px-8 py-6 text-lg font-bold"
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             >
               Get Started Now
             </Button>
             <Button 
               variant="outline" 
-              className="border-white text-white hover:bg-white/10 group px-8 py-6 text-lg"
+              className="border-white text-convertly-blue font-bold bg-white hover:bg-white/90 group px-8 py-6 text-lg"
             >
               Schedule a Call
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

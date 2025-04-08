@@ -38,7 +38,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Services</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">CRO Website Upgrades</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Conversion Rate Optimization</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Running Ads (PPC/Social)</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Search Engine Optimization</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Email Marketing</a></li>
@@ -53,7 +53,6 @@ const Footer = () => {
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Reputation Management</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Content Marketing</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Video Marketing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Lead Generation Funnels</a></li>
             </ul>
           </div>
           
@@ -68,13 +67,14 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <Phone className="h-5 w-5 text-gray-400 mr-2 mt-1" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <a href="tel:+15878170773" className="text-gray-400 hover:text-white transition-colors">
+                  +1 (587) 817-0773
+                </a>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-gray-400 mr-2 mt-1" />
                 <span className="text-gray-400">
-                  123 Marketing Street<br />
-                  Digital City, ON A1B 2C3
+                  Calgary, Alberta
                 </span>
               </li>
             </ul>

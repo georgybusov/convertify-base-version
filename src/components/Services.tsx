@@ -1,7 +1,7 @@
 
 import { 
   BarChart3, Search, Mail, MonitorSmartphone, 
-  MapPin, Star, PenTool, Youtube, Users, LineChart 
+  MapPin, Star, PenTool, Youtube, Users 
 } from "lucide-react";
 import ServiceCard from "./ServiceCard";
 
@@ -9,7 +9,7 @@ const Services = () => {
   const services = [
     {
       icon: <BarChart3 size={32} />,
-      title: "CRO Website Upgrades",
+      title: "Conversion Rate Optimization",
       description: "Optimize your website to convert more visitors into customers with data-driven design and UX improvements."
     },
     {
@@ -51,11 +51,6 @@ const Services = () => {
       icon: <Youtube size={32} />,
       title: "Video Marketing & YouTube SEO",
       description: "Develop engaging video content optimized for search to expand your reach and engagement."
-    },
-    {
-      icon: <LineChart size={32} />,
-      title: "Lead Generation Funnels",
-      description: "Build strategic conversion paths that turn prospects into qualified leads and customers."
     }
   ];
 

@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -32,8 +32,9 @@ const Navbar = () => {
           <a href="#contact" className="text-sm font-medium text-gray-700 hover:text-convertly-blue transition-colors">
             Contact
           </a>
-          <Button className="bg-convertly-blue hover:bg-convertly-lightblue text-white rounded-md">
-            Get Started
+          <Button className="bg-convertly-blue hover:bg-convertly-lightblue text-white rounded-md flex items-center gap-2">
+            <Phone className="h-4 w-4" />
+            <a href="tel:+15878170773">+1 (587) 817-0773</a>
           </Button>
         </nav>
 
@@ -76,8 +77,9 @@ const Navbar = () => {
             >
               Contact
             </a>
-            <Button className="w-full bg-convertly-blue hover:bg-convertly-lightblue text-white">
-              Get Started
+            <Button className="w-full bg-convertly-blue hover:bg-convertly-lightblue text-white flex items-center justify-center gap-2">
+              <Phone className="h-4 w-4" />
+              <a href="tel:+15878170773">+1 (587) 817-0773</a>
             </Button>
           </div>
         </div>

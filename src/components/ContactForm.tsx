@@ -58,7 +58,7 @@ const ContactForm = () => {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Grow Your Business?</h2>
             <p className="text-gray-700 mb-8">
-              Contact us today for a free consultation. Our team will analyze your current digital marketing strategy and identify opportunities for growth.
+              Contact us today for a free consultation. Our team will analyze your current digital marketing strategy and identify opportunities for growth at competitive rates with quick turnaround times.
             </p>
             
             <div className="space-y-6">
@@ -66,7 +66,7 @@ const ContactForm = () => {
                 <Phone className="h-6 w-6 text-convertly-blue mr-4 mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg">Phone</h3>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-600">+1 (587) 817-0773</p>
                 </div>
               </div>
               
@@ -81,8 +81,8 @@ const ContactForm = () => {
               <div className="flex items-start">
                 <MapPin className="h-6 w-6 text-convertly-blue mr-4 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-lg">Office</h3>
-                  <p className="text-gray-600">123 Marketing Street, Suite 456<br />Digital City, ON A1B 2C3</p>
+                  <h3 className="font-semibold text-lg">Calgary, Alberta</h3>
+                  <p className="text-gray-600">123 Marketing Street, Suite 456<br />Calgary, AB T2P 1J9</p>
                 </div>
               </div>
             </div>
@@ -181,7 +181,7 @@ const ContactForm = () => {
                       className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-convertly-blue focus:border-convertly-blue"
                     >
                       <option value="">Select a service</option>
-                      <option value="CRO">Website Upgrades (CRO)</option>
+                      <option value="CRO">Conversion Rate Optimization</option>
                       <option value="PPC">Running Ads (PPC/Social)</option>
                       <option value="SEO">Search Engine Optimization</option>
                       <option value="Email">Email Marketing</option>
@@ -190,7 +190,6 @@ const ContactForm = () => {
                       <option value="Reputation">Reputation Management</option>
                       <option value="Content">Content Marketing</option>
                       <option value="Video">Video Marketing</option>
-                      <option value="Lead">Lead Generation Funnels</option>
                       <option value="Other">Other</option>
                     </select>
                   </div>
