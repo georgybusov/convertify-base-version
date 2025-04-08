@@ -1,3 +1,4 @@
+
 import { 
   Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin 
 } from "lucide-react";
@@ -73,7 +74,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-gray-400 mr-2 mt-1" />
                 <span className="text-gray-400">
-                  Calgary, Alberta T2P 1J9
+                  Calgary, Alberta
                 </span>
               </li>
             </ul>

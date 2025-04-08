@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, Calendar } from "lucide-react";
 
 const Cta = () => {
   const benefits = [
@@ -9,6 +9,9 @@ const Cta = () => {
     "Data-driven strategies that convert",
     "Affordable pricing with fast turnaround"
   ];
+
+  // Google calendar scheduling link for georgy@convertly.ca
+  const scheduleUrl = "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1PUwf_jLKvFLBaX5t1B-mxsO7YzsdDWXW-Tmex-l-X9dRNH96ysZgWNLbW6SBa4pBnABs1XRl0";
 
   return (
     <section className="py-20 bg-gradient-to-br from-convertly-blue to-convertly-dark relative overflow-hidden">
@@ -48,9 +51,13 @@ const Cta = () => {
             <Button 
               variant="outline" 
               className="border-white text-convertly-blue font-bold bg-white hover:bg-white/90 group px-8 py-6 text-lg"
+              onClick={() => window.open(scheduleUrl, '_blank')}
             >
-              Schedule a Call
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <span className="flex items-center">
+                <Calendar className="mr-2 h-5 w-5" />
+                Schedule a Call
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </span>
             </Button>
           </div>
         </div>
