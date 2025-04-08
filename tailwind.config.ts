@@ -67,7 +67,10 @@ export default {
 					blue: '#00509e',
 					lightblue: '#0073e6',
 					gray: '#f0f4f8',
-					dark: '#1a2c42'
+					dark: '#1a2c42',
+					accent: '#ff6b35',
+					green: '#2ecc71',
+					yellow: '#ffc845'
 				}
 			},
 			borderRadius: {
@@ -101,12 +104,32 @@ export default {
 					  opacity: '1',
 					  transform: 'translateY(0)'
 					}
+				},
+				'slide-in-right': {
+					'0%': {
+						transform: 'translateX(100%)'
+					},
+					'100%': {
+						transform: 'translateX(0)'
+					}
+				},
+				'zoom-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'scale(0.95)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'scale(1)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.5s ease-out forwards'
+				'fade-in': 'fade-in 0.5s ease-out forwards',
+				'slide-in-right': 'slide-in-right 0.5s ease-out forwards',
+				'zoom-in': 'zoom-in 0.3s ease-out forwards'
 			}
 		}
 	},

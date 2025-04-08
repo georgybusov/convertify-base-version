@@ -92,6 +92,11 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 .service-card {
@@ -105,4 +110,47 @@
 
 .gradient-heading {
   @apply bg-gradient-to-r from-convertly-blue to-convertly-lightblue bg-clip-text text-transparent;
+}
+
+/* Enhanced animation keyframes */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 80, 158, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 80, 158, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 80, 158, 0);
+  }
+}
+
+/* Additional animation classes */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-blue {
+  animation: pulse 2s infinite;
+}
+
+/* Enhanced gradient backgrounds */
+.bg-gradient-blue {
+  background: linear-gradient(135deg, #00509e 0%, #0073e6 100%);
+}
+
+.bg-gradient-light {
+  background: linear-gradient(135deg, #f0f4f8 0%, #e1e8f0 100%);
 }

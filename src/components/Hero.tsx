@@ -1,11 +1,40 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  
+  useEffect(() => {
+    const videoElement = document.getElementById('hero-video') as HTMLVideoElement;
+    if (videoElement) {
+      videoElement.addEventListener('loadeddata', () => {
+        setIsVideoLoaded(true);
+      });
+    }
+  }, []);
+
   return (
-    <section className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-b from-white to-convertly-gray">
-      <div className="container mx-auto px-4">
+    <section className="relative py-20 md:py-32 overflow-hidden">
+      {/* Video Background */}
+      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-convertly-dark/20">
+        <video 
+          id="hero-video"
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+          className={`object-cover w-full h-full opacity-0 transition-opacity duration-1000 ${isVideoLoaded ? 'opacity-20' : ''}`}
+          poster="/lovable-uploads/e4152fc0-870f-4f7c-8338-5e2637f79240.png"
+        >
+          <source src="https://cdn.pixabay.com/vimeo/328340528/computer-24149.mp4?width=1280&hash=f93db8958a992269468f18008ce8fbc2559ad16d" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+      {/* Content overlay */}
+      <div className="container relative z-10 mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 gradient-heading leading-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
@@ -15,10 +44,17 @@ const Hero = () => {
               Convertly helps businesses increase conversions, drive traffic, and generate more leads with data-driven marketing strategies tailored to your goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.5s" }}>
-              <Button className="bg-convertly-blue hover:bg-convertly-lightblue text-white px-8 py-6 rounded-md text-lg">
+              <Button 
+                className="bg-convertly-blue hover:bg-convertly-lightblue text-white px-8 py-6 rounded-md text-lg"
+                onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}  
+              >
                 Get a Free Consultation
               </Button>
-              <Button variant="outline" className="border-convertly-blue text-convertly-blue hover:bg-convertly-blue hover:text-white group px-8 py-6 rounded-md text-lg">
+              <Button 
+                variant="outline" 
+                className="border-convertly-blue text-convertly-blue hover:bg-convertly-blue hover:text-white group px-8 py-6 rounded-md text-lg"
+                onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+              >
                 Explore Services
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
