@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
@@ -82,7 +81,7 @@ const ContactForm = () => {
                 <MapPin className="h-6 w-6 text-convertly-blue mr-4 mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg">Calgary, Alberta</h3>
-                  <p className="text-gray-600">123 Marketing Street, Suite 456<br />Calgary, AB T2P 1J9</p>
+                  <p className="text-gray-600">T2P 1J9</p>
                 </div>
               </div>
             </div>
