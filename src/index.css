@@ -104,12 +104,12 @@
 }
 
 .service-card:hover {
-  @apply border-convertly-blue;
+  @apply border-convertify-blue;
   transform: translateY(-5px);
 }
 
 .gradient-heading {
-  @apply bg-gradient-to-r from-convertly-blue to-convertly-lightblue bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-convertify-blue to-convertify-lightblue bg-clip-text text-transparent;
 }
 
 /* Enhanced animation keyframes */
