@@ -1,6 +1,5 @@
-
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar, Phone, CheckCircle } from "lucide-react";
+import { ArrowRight, Calendar, Phone, CheckCircle, Star } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const Hero = () => {
@@ -17,7 +16,6 @@ const Hero = () => {
 
   return (
     <section className="relative py-12 md:py-20 overflow-hidden bg-gradient-to-br from-white via-convertify-gray/20 to-convertify-gray/40">
-      {/* Video Background with reduced opacity */}
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
         <video 
           id="hero-video"
@@ -33,7 +31,6 @@ const Hero = () => {
         </video>
       </div>
       
-      {/* Content overlay */}
       <div className="container relative z-10 mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 lg:pr-12 mb-6 lg:mb-0">
@@ -41,7 +38,6 @@ const Hero = () => {
               Transform Your<br />Digital Presence & <span className="text-convertify-blue">Drive Growth</span>
             </h1>
             
-            {/* Trust indicators */}
             <div className="flex flex-wrap gap-4 mb-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
               <div className="flex items-center gap-1 bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
                 <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
@@ -57,7 +53,6 @@ const Hero = () => {
               Convertify helps businesses increase conversions, drive traffic, and generate more leads with data-driven marketing strategies tailored to your goals.
             </p>
             
-            {/* Key benefits bullets */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 animate-fade-in" style={{ animationDelay: "0.4s" }}>
               <div className="flex items-center gap-2">
                 <div className="p-1 bg-convertify-blue/10 rounded-full">
@@ -112,7 +107,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Curved divider with updated color */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden">
         <svg
           className="relative block w-full h-8 md:h-12"
