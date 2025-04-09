@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Phone, CheckCircle, Star } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -96,11 +97,43 @@ const Hero = () => {
           </div>
           <div className="lg:w-1/2 animate-fade-in" style={{ animationDelay: "0.7s" }}>
             <div className="relative">
-              <img
-                src="/lovable-uploads/76c91e32-3a8e-4352-b236-c4940b4a3c75.png"
-                alt="Convertify Growth Suite"
-                className="w-full max-w-md mx-auto rounded-2xl shadow-lg backdrop-blur-lg bg-gradient-to-b from-white/60 to-convertify-gray/10 p-6"
-              />
+              <div className="flex flex-col items-center">
+                <img
+                  src="/lovable-uploads/c18f52c7-8078-499e-ae62-00bc7eede43e.png"
+                  alt="Convertify Logo"
+                  className="w-full max-w-sm mx-auto mb-6"
+                />
+                <div className="w-full max-w-md bg-white/80 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-gray-100">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center space-x-2">
+                      <div className="h-3 w-3 bg-red-400 rounded-full"></div>
+                      <div className="h-3 w-3 bg-yellow-400 rounded-full"></div>
+                      <div className="h-3 w-3 bg-green-400 rounded-full"></div>
+                    </div>
+                    <div className="text-xs text-gray-500">dashboard.convertify.ca</div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="h-8 bg-convertify-blue/10 rounded-md w-3/4"></div>
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="h-20 bg-convertify-blue/20 rounded-md flex items-center justify-center">
+                        <div className="w-12 h-12 flex items-center justify-center">
+                          <div className="h-8 w-8 border-t-4 border-r-4 border-convertify-blue rounded-tr-lg transform rotate-45"></div>
+                        </div>
+                      </div>
+                      <div className="h-20 bg-convertify-blue/10 rounded-md flex items-center justify-center">
+                        <div className="h-10 w-3/4 bg-convertify-blue/30 rounded-md"></div>
+                      </div>
+                    </div>
+                    <div className="h-32 bg-gray-100 rounded-md p-3">
+                      <div className="h-4 w-3/4 bg-convertify-blue/20 rounded mb-2"></div>
+                      <div className="h-3 w-full bg-gray-200 rounded mb-1"></div>
+                      <div className="h-3 w-5/6 bg-gray-200 rounded mb-1"></div>
+                      <div className="h-3 w-4/6 bg-gray-200 rounded mb-3"></div>
+                      <div className="h-6 w-1/3 bg-convertify-blue/40 rounded-md"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-convertify-blue/5 rounded-full blur-3xl"></div>
             </div>
           </div>
