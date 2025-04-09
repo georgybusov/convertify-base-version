@@ -1,6 +1,7 @@
 
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import TrustBadges from "@/components/TrustBadges";
 import TrustSection from "@/components/TrustSection";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
@@ -14,6 +15,7 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
+        <TrustBadges />
         <TrustSection />
         <Services />
         <Process />

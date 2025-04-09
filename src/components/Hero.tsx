@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar, Phone, CheckCircle, Star, Award } from "lucide-react";
+import { ArrowRight, Calendar, Phone } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const Hero = () => {
@@ -38,21 +38,6 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-center lg:text-left text-convertify-dark leading-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
               Transform Your<br />Digital Presence & <span className="text-convertify-blue">Drive Growth</span>
             </h1>
-            
-            <div className="flex flex-wrap gap-4 mb-4 justify-center lg:justify-start animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              <div className="flex items-center gap-1 bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
-                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                <span className="text-sm font-medium">4.9/5 Rating</span>
-              </div>
-              <div className="flex items-center gap-1 bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
-                <CheckCircle className="h-4 w-4 text-convertify-green" />
-                <span className="text-sm font-medium">ROI Guaranteed</span>
-              </div>
-              <div className="flex items-center gap-1 bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
-                <Award className="h-4 w-4 text-convertify-blue" />
-                <span className="text-sm font-medium">14 Years Experience</span>
-              </div>
-            </div>
             
             <p className="text-lg md:text-xl text-gray-700 mb-6 text-center lg:text-left animate-fade-in" style={{ animationDelay: "0.3s" }}>
               Convertify helps businesses increase conversions, drive traffic, and generate more leads with data-driven marketing strategies tailored to your goals.
@@ -109,11 +94,6 @@ const Hero = () => {
                   alt="Marketing dashboard analytics" 
                   className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-500"
                 />
-              </div>
-              <div className="absolute -bottom-4 -right-4 bg-white rounded-full p-3 shadow-lg animate-pulse-blue">
-                <div className="bg-convertify-blue text-white rounded-full p-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8"><path d="m22 8-6 4 6 4V8Z"/><rect width="16" height="12" x="2" y="6" rx="2"/></svg>
-                </div>
               </div>
             </div>
           </div>
