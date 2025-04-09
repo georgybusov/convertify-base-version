@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TrustSection from "@/components/TrustSection";
 import Services from "@/components/Services";
-import About from "@/components/About";
 import Process from "@/components/Process";
 import Cta from "@/components/Cta";
 import ContactForm from "@/components/ContactForm";
@@ -17,7 +16,6 @@ const Index = () => {
         <Hero />
         <TrustSection />
         <Services />
-        <About />
         <Process />
         <Cta />
         <ContactForm />
