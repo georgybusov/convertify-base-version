@@ -3,16 +3,17 @@ import { Star, Award, Shield, Check } from "lucide-react";
 
 const TrustSection = () => {
   const clients = [
-    "/lovable-uploads/e4152fc0-870f-4f7c-8338-5e2637f79240.png", // Using logo as placeholder, ideally replace with client logos
+    "/lovable-uploads/e4152fc0-870f-4f7c-8338-5e2637f79240.png",
+    "/lovable-uploads/76c91e32-3a8e-4352-b236-c4940b4a3c75.png"
   ];
 
   return (
-    <section className="py-12 bg-convertify-gray/50 border-y border-gray-200">
+    <section className="py-8 bg-convertify-gray/50 border-y border-gray-200">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center">
-          <h2 className="text-2xl font-bold mb-8 text-center text-convertify-dark">Trusted by Businesses Across Industries</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center text-convertify-dark">Trusted by Businesses Across Industries</h2>
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 mb-10 w-full max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 mb-8 w-full max-w-4xl mx-auto">
             <div className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-sm">
               <div className="flex items-center text-convertify-blue mb-1">
                 <Star className="h-5 w-5 fill-convertify-blue text-convertify-blue" />

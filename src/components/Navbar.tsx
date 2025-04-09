@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <a href="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/598ea263-4a27-4d70-96ee-e712e991b848.png" 
+              src="/lovable-uploads/76c91e32-3a8e-4352-b236-c4940b4a3c75.png" 
               alt="Convertify Logo" 
               className="h-10 w-auto"
             />
