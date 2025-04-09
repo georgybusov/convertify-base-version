@@ -16,16 +16,16 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative py-20 md:py-32 overflow-hidden">
-      {/* Video Background */}
-      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-convertify-dark/20">
+    <section className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-b from-white to-convertify-gray/30">
+      {/* Video Background with reduced opacity */}
+      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
         <video 
           id="hero-video"
           autoPlay 
           muted 
           loop 
           playsInline
-          className={`object-cover w-full h-full opacity-0 transition-opacity duration-1000 ${isVideoLoaded ? 'opacity-20' : ''}`}
+          className={`object-cover w-full h-full opacity-0 transition-opacity duration-1000 ${isVideoLoaded ? 'opacity-10' : ''}`}
           poster="/lovable-uploads/598ea263-4a27-4d70-96ee-e712e991b848.png"
         >
           <source src="https://cdn.pixabay.com/vimeo/328340528/computer-24149.mp4?width=1280&hash=f93db8958a992269468f18008ce8fbc2559ad16d" type="video/mp4" />
@@ -37,7 +37,7 @@ const Hero = () => {
       <div className="container relative z-10 mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 gradient-heading leading-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-convertify-dark leading-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
               Transform Your Digital Presence & Drive Growth
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8 animate-fade-in" style={{ animationDelay: "0.3s" }}>
@@ -65,15 +65,15 @@ const Hero = () => {
               <img
                 src="/lovable-uploads/598ea263-4a27-4d70-96ee-e712e991b848.png"
                 alt="Convertify Growth Suite"
-                className="w-full max-w-md mx-auto"
+                className="w-full max-w-md mx-auto rounded-2xl shadow-lg backdrop-blur-sm bg-gradient-to-b from-white/80 to-convertify-gray/20 p-3"
               />
-              <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-convertify-blue/10 rounded-full blur-3xl"></div>
+              <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-convertify-blue/5 rounded-full blur-3xl"></div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Curved divider */}
+      {/* Curved divider with updated color */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden">
         <svg
           className="relative block w-full h-12 md:h-20"

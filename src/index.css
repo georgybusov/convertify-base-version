@@ -154,3 +154,14 @@
 .bg-gradient-light {
   background: linear-gradient(135deg, #f0f4f8 0%, #e1e8f0 100%);
 }
+
+/* Logo blend styles */
+.logo-blend {
+  @apply bg-gradient-to-b from-white/80 to-convertify-gray/20 p-3 rounded-2xl backdrop-blur-sm;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo-blend:hover {
+  @apply from-white/90 to-convertify-gray/30;
+  box-shadow: 0 10px 30px -10px rgba(0, 80, 158, 0.2);
+}
