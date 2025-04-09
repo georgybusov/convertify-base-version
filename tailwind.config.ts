@@ -63,7 +63,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				convertly: {
+				convertify: {
 					blue: '#00509e',
 					lightblue: '#0073e6',
 					gray: '#f0f4f8',

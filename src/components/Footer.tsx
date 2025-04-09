@@ -5,14 +5,14 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-convertly-dark text-white pt-16 pb-8">
+    <footer className="bg-convertify-dark text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <a href="/" className="inline-block mb-6">
               <img 
-                src="/lovable-uploads/e4152fc0-870f-4f7c-8338-5e2637f79240.png" 
-                alt="Convertly Logo" 
+                src="/lovable-uploads/598ea263-4a27-4d70-96ee-e712e991b848.png" 
+                alt="Convertify Logo" 
                 className="h-10 w-auto"
               />
             </a>
@@ -61,8 +61,8 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-gray-400 mr-2 mt-1" />
-                <a href="mailto:georgy@convertly.ca" className="text-gray-400 hover:text-white transition-colors">
-                  georgy@convertly.ca
+                <a href="mailto:georgy@convertify.ca" className="text-gray-400 hover:text-white transition-colors">
+                  georgy@convertify.ca
                 </a>
               </li>
               <li className="flex items-start">
@@ -83,7 +83,7 @@ const Footer = () => {
         
         <div className="pt-8 border-t border-gray-800 text-center md:flex md:justify-between md:text-left">
           <p className="text-gray-500 mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Convertly. All rights reserved.
+            &copy; {new Date().getFullYear()} Convertify. All rights reserved.
           </p>
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 justify-center">
             <a href="#" className="text-gray-500 hover:text-white transition-colors">Privacy Policy</a>

@@ -10,11 +10,11 @@ const Cta = () => {
     "Affordable pricing with fast turnaround"
   ];
 
-  // Google calendar scheduling link for georgy@convertly.ca
+  // Google calendar scheduling link for georgy@convertify.ca
   const scheduleUrl = "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1PUwf_jLKvFLBaX5t1B-mxsO7YzsdDWXW-Tmex-l-X9dRNH96ysZgWNLbW6SBa4pBnABs1XRl0";
 
   return (
-    <section className="py-20 bg-gradient-to-br from-convertly-blue to-convertly-dark relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-convertify-blue to-convertify-dark relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-48 h-48 bg-white rounded-full blur-3xl"></div>
@@ -34,7 +34,7 @@ const Cta = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-center gap-2 text-white/90">
-                  <Check className="h-5 w-5 text-white bg-convertly-lightblue rounded-full p-1 flex-shrink-0" />
+                  <Check className="h-5 w-5 text-white bg-convertify-lightblue rounded-full p-1 flex-shrink-0" />
                   <span>{benefit}</span>
                 </div>
               ))}
@@ -43,14 +43,14 @@ const Cta = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
-              className="bg-white text-convertly-blue hover:bg-gray-100 px-8 py-6 text-lg font-bold"
+              className="bg-white text-convertify-blue hover:bg-gray-100 px-8 py-6 text-lg font-bold"
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             >
               Get Started Now
             </Button>
             <Button 
               variant="outline" 
-              className="border-white text-convertly-blue font-bold bg-white hover:bg-white/90 group px-8 py-6 text-lg"
+              className="border-white text-convertify-blue font-bold bg-white hover:bg-white/90 group px-8 py-6 text-lg"
               onClick={() => window.open(scheduleUrl, '_blank')}
             >
               <span className="flex items-center">

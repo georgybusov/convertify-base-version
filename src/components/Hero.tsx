@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <section className="relative py-20 md:py-32 overflow-hidden">
       {/* Video Background */}
-      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-convertly-dark/20">
+      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-convertify-dark/20">
         <video 
           id="hero-video"
           autoPlay 
@@ -26,7 +26,7 @@ const Hero = () => {
           loop 
           playsInline
           className={`object-cover w-full h-full opacity-0 transition-opacity duration-1000 ${isVideoLoaded ? 'opacity-20' : ''}`}
-          poster="/lovable-uploads/e4152fc0-870f-4f7c-8338-5e2637f79240.png"
+          poster="/lovable-uploads/598ea263-4a27-4d70-96ee-e712e991b848.png"
         >
           <source src="https://cdn.pixabay.com/vimeo/328340528/computer-24149.mp4?width=1280&hash=f93db8958a992269468f18008ce8fbc2559ad16d" type="video/mp4" />
           Your browser does not support the video tag.
@@ -41,18 +41,18 @@ const Hero = () => {
               Transform Your Digital Presence & Drive Growth
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-              Convertly helps businesses increase conversions, drive traffic, and generate more leads with data-driven marketing strategies tailored to your goals.
+              Convertify helps businesses increase conversions, drive traffic, and generate more leads with data-driven marketing strategies tailored to your goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.5s" }}>
               <Button 
-                className="bg-convertly-blue hover:bg-convertly-lightblue text-white px-8 py-6 rounded-md text-lg"
+                className="bg-convertify-blue hover:bg-convertify-lightblue text-white px-8 py-6 rounded-md text-lg"
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}  
               >
                 Get a Free Consultation
               </Button>
               <Button 
                 variant="outline" 
-                className="border-convertly-blue text-convertly-blue hover:bg-convertly-blue hover:text-white group px-8 py-6 rounded-md text-lg"
+                className="border-convertify-blue text-convertify-blue hover:bg-convertify-blue hover:text-white group px-8 py-6 rounded-md text-lg"
                 onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
               >
                 Explore Services
@@ -63,11 +63,11 @@ const Hero = () => {
           <div className="lg:w-1/2 animate-fade-in" style={{ animationDelay: "0.7s" }}>
             <div className="relative">
               <img
-                src="/lovable-uploads/e4152fc0-870f-4f7c-8338-5e2637f79240.png"
-                alt="Convertly Growth Suite"
+                src="/lovable-uploads/598ea263-4a27-4d70-96ee-e712e991b848.png"
+                alt="Convertify Growth Suite"
                 className="w-full max-w-md mx-auto"
               />
-              <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-convertly-blue/10 rounded-full blur-3xl"></div>
+              <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-convertify-blue/10 rounded-full blur-3xl"></div>
             </div>
           </div>
         </div>

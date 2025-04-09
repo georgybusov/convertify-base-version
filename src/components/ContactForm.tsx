@@ -52,7 +52,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-convertly-gray">
+    <section id="contact" className="py-20 bg-convertify-gray">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
@@ -63,7 +63,7 @@ const ContactForm = () => {
             
             <div className="space-y-6">
               <div className="flex items-start">
-                <Phone className="h-6 w-6 text-convertly-blue mr-4 mt-1" />
+                <Phone className="h-6 w-6 text-convertify-blue mr-4 mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg">Phone</h3>
                   <p className="text-gray-600">+1 (587) 817-0773</p>
@@ -71,15 +71,15 @@ const ContactForm = () => {
               </div>
               
               <div className="flex items-start">
-                <Mail className="h-6 w-6 text-convertly-blue mr-4 mt-1" />
+                <Mail className="h-6 w-6 text-convertify-blue mr-4 mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg">Email</h3>
-                  <p className="text-gray-600">georgy@convertly.ca</p>
+                  <p className="text-gray-600">georgy@convertify.ca</p>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <MapPin className="h-6 w-6 text-convertly-blue mr-4 mt-1" />
+                <MapPin className="h-6 w-6 text-convertify-blue mr-4 mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg">Calgary, Alberta</h3>
                 </div>
@@ -102,7 +102,7 @@ const ContactForm = () => {
                   </p>
                   <Button 
                     onClick={() => setIsSubmitted(false)}
-                    className="bg-convertly-blue hover:bg-convertly-lightblue text-white"
+                    className="bg-convertify-blue hover:bg-convertify-lightblue text-white"
                   >
                     Send Another Message
                   </Button>

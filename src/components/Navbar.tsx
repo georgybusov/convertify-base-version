@@ -12,27 +12,27 @@ const Navbar = () => {
         <div className="flex items-center">
           <a href="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/e4152fc0-870f-4f7c-8338-5e2637f79240.png" 
-              alt="Convertly Logo" 
+              src="/lovable-uploads/598ea263-4a27-4d70-96ee-e712e991b848.png" 
+              alt="Convertify Logo" 
               className="h-10 w-auto"
             />
           </a>
         </div>
 
         <nav className="hidden md:flex items-center space-x-6">
-          <a href="#services" className="text-sm font-medium text-gray-700 hover:text-convertly-blue transition-colors">
+          <a href="#services" className="text-sm font-medium text-gray-700 hover:text-convertify-blue transition-colors">
             Services
           </a>
-          <a href="#about" className="text-sm font-medium text-gray-700 hover:text-convertly-blue transition-colors">
+          <a href="#about" className="text-sm font-medium text-gray-700 hover:text-convertify-blue transition-colors">
             About
           </a>
-          <a href="#process" className="text-sm font-medium text-gray-700 hover:text-convertly-blue transition-colors">
+          <a href="#process" className="text-sm font-medium text-gray-700 hover:text-convertify-blue transition-colors">
             Our Process
           </a>
-          <a href="#contact" className="text-sm font-medium text-gray-700 hover:text-convertly-blue transition-colors">
+          <a href="#contact" className="text-sm font-medium text-gray-700 hover:text-convertify-blue transition-colors">
             Contact
           </a>
-          <Button className="bg-convertly-blue hover:bg-convertly-lightblue text-white rounded-md flex items-center gap-2">
+          <Button className="bg-convertify-blue hover:bg-convertify-lightblue text-white rounded-md flex items-center gap-2">
             <Phone className="h-4 w-4" />
             <a href="tel:+15878170773">+1 (587) 817-0773</a>
           </Button>
@@ -51,33 +51,33 @@ const Navbar = () => {
           <div className="container mx-auto px-4 py-3 space-y-2">
             <a 
               href="#services" 
-              className="block py-2 text-base font-medium text-gray-700 hover:text-convertly-blue"
+              className="block py-2 text-base font-medium text-gray-700 hover:text-convertify-blue"
               onClick={() => setIsOpen(false)}
             >
               Services
             </a>
             <a 
               href="#about" 
-              className="block py-2 text-base font-medium text-gray-700 hover:text-convertly-blue"
+              className="block py-2 text-base font-medium text-gray-700 hover:text-convertify-blue"
               onClick={() => setIsOpen(false)}
             >
               About
             </a>
             <a 
               href="#process" 
-              className="block py-2 text-base font-medium text-gray-700 hover:text-convertly-blue"
+              className="block py-2 text-base font-medium text-gray-700 hover:text-convertify-blue"
               onClick={() => setIsOpen(false)}
             >
               Our Process
             </a>
             <a 
               href="#contact" 
-              className="block py-2 text-base font-medium text-gray-700 hover:text-convertly-blue"
+              className="block py-2 text-base font-medium text-gray-700 hover:text-convertify-blue"
               onClick={() => setIsOpen(false)}
             >
               Contact
             </a>
-            <Button className="w-full bg-convertly-blue hover:bg-convertly-lightblue text-white flex items-center justify-center gap-2">
+            <Button className="w-full bg-convertify-blue hover:bg-convertify-lightblue text-white flex items-center justify-center gap-2">
               <Phone className="h-4 w-4" />
               <a href="tel:+15878170773">+1 (587) 817-0773</a>
             </Button>
