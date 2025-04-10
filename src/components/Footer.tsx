@@ -1,94 +1,93 @@
-import { 
-  Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin 
-} from "lucide-react";
+
+import React from "react";
+import { Link } from "react-router-dom";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-convertify-dark text-white pt-16 pb-8">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          <div>
-            <a href="/" className="inline-block mb-6">
-              <img 
-                src="/lovable-uploads/c18f52c7-8078-499e-ae62-00bc7eede43e.png" 
-                alt="Convertify Logo" 
-                className="h-12 w-auto bg-white/10 backdrop-blur-sm p-2 rounded-lg"
-              />
-            </a>
-            <p className="text-gray-400 mb-6">
-              Helping businesses boost conversions, drive traffic, and generate more leads through data-driven marketing strategies.
+    <footer className="bg-gray-900 text-white pt-12 pb-6">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="md:col-span-1">
+            <img
+              src="/lovable-uploads/598ea263-4a27-4d70-96ee-e712e991b848.png"
+              alt="Convertify"
+              className="h-12 mb-4"
+            />
+            <p className="text-gray-400 mb-4">
+              Boosting conversions and driving growth for businesses across industries.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Linkedin size={20} />
-              </a>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/" className="text-gray-400 hover:text-white transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/schedule" className="text-gray-400 hover:text-white transition-colors">
+                  Schedule a Call
+                </Link>
+              </li>
+              <li>
+                <a href="#services" className="text-gray-400 hover:text-white transition-colors">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="text-gray-400 hover:text-white transition-colors">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="text-gray-400 hover:text-white transition-colors">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <ul className="space-y-2">
+              <li className="text-gray-400">Conversion Rate Optimization</li>
+              <li className="text-gray-400">Search Engine Optimization</li>
+              <li className="text-gray-400">Pay-Per-Click Advertising</li>
+              <li className="text-gray-400">Social Media Marketing</li>
+              <li className="text-gray-400">Email Marketing</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <div className="space-y-3">
+              <p className="flex items-start">
+                <MapPin className="w-5 h-5 mr-2 mt-1 text-[#4A1FB8]" />
+                <span className="text-gray-400">Toronto, ON, Canada</span>
+              </p>
+              <p className="flex items-center">
+                <Mail className="w-5 h-5 mr-2 text-[#4A1FB8]" />
+                <a href="mailto:georgy@convertify.ca" className="text-gray-400 hover:text-white transition-colors">
+                  georgy@convertify.ca
+                </a>
+              </p>
+              <p className="flex items-center">
+                <Phone className="w-5 h-5 mr-2 text-[#4A1FB8]" />
+                <a href="tel:+14165551234" className="text-gray-400 hover:text-white transition-colors">
+                  +1 (416) 555-1234
+                </a>
+              </p>
             </div>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Services</h3>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Conversion Rate Optimization</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Running Ads (PPC/Social)</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Search Engine Optimization</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Email Marketing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Social Media Management</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-6">More Services</h3>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Google Business Profile</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Reputation Management</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Content Marketing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Video Marketing</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <Mail className="h-5 w-5 text-gray-400 mr-2 mt-1" />
-                <a href="mailto:georgy.busov@gmail.com" className="text-gray-400 hover:text-white transition-colors">
-                  georgy.busov@gmail.com
-                </a>
-              </li>
-              <li className="flex items-start">
-                <Phone className="h-5 w-5 text-gray-400 mr-2 mt-1" />
-                <a href="tel:+15878170773" className="text-gray-400 hover:text-white transition-colors">
-                  +1 (587) 817-0773
-                </a>
-              </li>
-              <li className="flex items-start">
-                <MapPin className="h-5 w-5 text-gray-400 mr-2 mt-1" />
-                <span className="text-gray-400">
-                  Calgary, Alberta
-                </span>
-              </li>
-            </ul>
           </div>
         </div>
         
-        <div className="pt-8 border-t border-gray-800 text-center md:flex md:justify-between md:text-left">
-          <p className="text-gray-500 mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Convertify. All rights reserved.
-          </p>
-          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 justify-center">
-            <a href="#" className="text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-500 hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="text-gray-500 hover:text-white transition-colors">Sitemap</a>
-          </div>
+        <hr className="border-gray-800 mt-8 mb-6" />
+        
+        <div className="text-center text-gray-500 text-sm">
+          <p>&copy; {new Date().getFullYear()} Convertify. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -5,7 +5,7 @@
 
 @layer base {
   :root {
-    --background: 210 50% 98%;
+    --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -14,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 212 100% 31%;
+    --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -34,15 +34,6 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
@@ -73,14 +64,6 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -88,80 +71,31 @@
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
   }
-  
-  /* Smooth scroll behavior */
-  html {
-    scroll-behavior: smooth;
+}
+
+/* Fix for iOS Safari text cut-off */
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */
+  body {
+    /* This prevents content from being hidden under the status bar on iOS */
+    padding-top: env(safe-area-inset-top);
+  }
+
+  /* Add padding to fixed elements that could be affected */
+  .sticky, .fixed {
+    padding-top: env(safe-area-inset-top);
   }
 }
 
-.service-card {
-  @apply relative overflow-hidden rounded-xl border p-6 shadow-sm transition-all hover:shadow-md;
+/* Make sure all links with anchor tags scroll smoothly */
+html {
+  scroll-behavior: smooth;
 }
 
-.service-card:hover {
-  @apply border-convertify-blue;
-  transform: translateY(-5px);
-}
-
-.gradient-heading {
-  @apply bg-gradient-to-r from-convertify-blue to-convertify-lightblue bg-clip-text text-transparent;
-}
-
-/* Enhanced animation keyframes */
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(0, 80, 158, 0.4);
-  }
-  70% {
-    box-shadow: 0 0 0 10px rgba(0, 80, 158, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(0, 80, 158, 0);
-  }
-}
-
-/* Additional animation classes */
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-}
-
-.animate-pulse-blue {
-  animation: pulse 2s infinite;
-}
-
-/* Enhanced gradient backgrounds */
-.bg-gradient-blue {
-  background: linear-gradient(135deg, #00509e 0%, #0073e6 100%);
-}
-
-.bg-gradient-light {
-  background: linear-gradient(135deg, #f0f4f8 0%, #e1e8f0 100%);
-}
-
-/* Logo blend styles */
-.logo-blend {
-  @apply bg-gradient-to-b from-white/80 to-convertify-gray/20 p-3 rounded-2xl backdrop-blur-sm;
-  transition: all 0.3s ease-in-out;
-}
-
-.logo-blend:hover {
-  @apply from-white/90 to-convertify-gray/30;
-  box-shadow: 0 10px 30px -10px rgba(0, 80, 158, 0.2);
+/* Ensure overscroll behavior is smooth */
+body {
+  overscroll-behavior-y: none;
 }
