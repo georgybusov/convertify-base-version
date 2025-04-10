@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
@@ -74,7 +73,7 @@ const ContactForm = () => {
                 <Mail className="h-6 w-6 text-convertify-blue mr-4 mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg">Email</h3>
-                  <p className="text-gray-600">georgy@convertify.ca</p>
+                  <p className="text-gray-600">georgy.busov@gmail.com</p>
                 </div>
               </div>
               
