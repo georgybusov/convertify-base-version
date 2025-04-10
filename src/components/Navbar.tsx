@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { useMobile } from "../hooks/use-mobile";
+import { useIsMobile } from "../hooks/use-mobile";
 
 const Navbar = () => {
-  const isMobile = useMobile();
+  const isMobile = useIsMobile();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
