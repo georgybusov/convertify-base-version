@@ -23,9 +23,6 @@ const Navbar = () => {
           <a href="#services" className="text-sm font-medium text-gray-700 hover:text-convertify-blue transition-colors">
             Services
           </a>
-          <a href="#about" className="text-sm font-medium text-gray-700 hover:text-convertify-blue transition-colors">
-            About
-          </a>
           <a href="#process" className="text-sm font-medium text-gray-700 hover:text-convertify-blue transition-colors">
             Our Process
           </a>
@@ -55,13 +52,6 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               Services
-            </a>
-            <a 
-              href="#about" 
-              className="block py-2 text-base font-medium text-gray-700 hover:text-convertify-blue"
-              onClick={() => setIsOpen(false)}
-            >
-              About
             </a>
             <a 
               href="#process" 

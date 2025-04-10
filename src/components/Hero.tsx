@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar, Phone } from "lucide-react";
+import { ArrowRight, Calendar } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const Hero = () => {
@@ -72,15 +72,6 @@ const Hero = () => {
                 <Calendar className="mr-2 h-5 w-5" />
                 Get a Free Consultation
                 <span className="ml-2 text-xs font-bold bg-white/20 px-2 py-0.5 rounded-full">Limited April Slots</span>
-              </Button>
-              <Button 
-                variant="outline" 
-                className="border-convertify-blue text-convertify-blue hover:bg-convertify-blue hover:text-white group px-8 py-6 rounded-md text-lg"
-                onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
-              >
-                <Phone className="mr-2 h-5 w-5" />
-                Schedule a Call
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
           </div>
