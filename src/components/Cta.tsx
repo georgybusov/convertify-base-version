@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Check, Calendar } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 
 const Cta = () => {
   const benefits = [
@@ -9,9 +9,6 @@ const Cta = () => {
     "Data-driven strategies that convert",
     "Affordable pricing with fast turnaround"
   ];
-
-  // Google calendar scheduling link for georgy@convertify.ca
-  const scheduleUrl = "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1PUwf_jLKvFLBaX5t1B-mxsO7YzsdDWXW-Tmex-l-X9dRNH96ysZgWNLbW6SBa4pBnABs1XRl0";
 
   return (
     <section className="py-20 bg-gradient-to-br from-convertify-blue to-convertify-dark relative overflow-hidden">
@@ -39,6 +36,18 @@ const Cta = () => {
                 </div>
               ))}
             </div>
+            
+            {/* New highlighted benefits */}
+            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div className="bg-white/20 p-4 rounded-lg border border-white/30">
+                <h3 className="text-white font-bold text-lg mb-1">Don't Pay Until You're Satisfied</h3>
+                <p className="text-white/90 text-sm">We only consider our job complete when you're 100% satisfied with the results.</p>
+              </div>
+              <div className="bg-white/20 p-4 rounded-lg border border-white/30">
+                <h3 className="text-white font-bold text-lg mb-1">Quickest Turnaround in the Industry</h3>
+                <p className="text-white/90 text-sm">Get results faster with our industry-leading response and implementation times.</p>
+              </div>
+            </div>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -47,17 +56,7 @@ const Cta = () => {
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             >
               Get Started Now
-            </Button>
-            <Button 
-              variant="outline" 
-              className="border-white text-white font-bold bg-transparent hover:bg-white/10 group px-8 py-6 text-lg"
-              onClick={() => window.location.href = "/schedule"}
-            >
-              <span className="flex items-center">
-                <Calendar className="mr-2 h-5 w-5" />
-                Schedule a Call
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </span>
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
         </div>
