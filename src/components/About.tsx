@@ -1,5 +1,4 @@
 
-import { Button } from "@/components/ui/button";
 import { 
   TrendingUp, Users, Target, BadgeCheck, 
   Zap, LineChart, ChartBar, BarChart 
@@ -62,10 +61,6 @@ const About = () => {
                 </div>
               ))}
             </div>
-            
-            <Button className="bg-convertify-blue hover:bg-convertify-lightblue text-white">
-              Learn More About Our Approach
-            </Button>
           </div>
           
           <div className="lg:w-1/2 bg-white p-8 rounded-xl shadow-md">
