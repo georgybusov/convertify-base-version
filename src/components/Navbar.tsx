@@ -1,132 +1,90 @@
 
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
-import { useIsMobile } from "../hooks/use-mobile";
+import { useState } from "react";
+import { Menu, X, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
-  const isMobile = useIsMobile();
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
-
   return (
-    <nav className="w-full z-50 bg-white shadow-sm sticky top-0">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
-          <div className="flex">
-            <Link to="/" className="flex-shrink-0 flex items-center">
-              <img
-                className="h-10 w-auto"
-                src="/lovable-uploads/598ea263-4a27-4d70-96ee-e712e991b848.png"
-                alt="Convertify"
-              />
-            </Link>
-          </div>
+    <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+        <div className="flex items-center">
+          <a href="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/c18f52c7-8078-499e-ae62-00bc7eede43e.png" 
+              alt="Convertify Logo" 
+              className="h-10 w-auto"
+            />
+          </a>
+        </div>
 
-          {isMobile ? (
-            <div className="flex items-center">
-              <button
-                onClick={toggleMenu}
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none"
-              >
-                {isOpen ? (
-                  <X className="block h-6 w-6" />
-                ) : (
-                  <Menu className="block h-6 w-6" />
-                )}
-              </button>
-            </div>
-          ) : (
-            <div className="flex space-x-6 items-center">
-              <Link
-                to="/"
-                className="text-gray-700 hover:text-[#4A1FB8] px-3 py-2 text-sm font-medium"
-              >
-                Home
-              </Link>
-              <Link
-                to="/schedule"
-                className="text-gray-700 hover:text-[#4A1FB8] px-3 py-2 text-sm font-medium"
-              >
-                Schedule a Call
-              </Link>
-              <a
-                href="#services"
-                className="text-gray-700 hover:text-[#4A1FB8] px-3 py-2 text-sm font-medium"
-              >
-                Services
-              </a>
-              <a
-                href="#about"
-                className="text-gray-700 hover:text-[#4A1FB8] px-3 py-2 text-sm font-medium"
-              >
-                About
-              </a>
-              <a
-                href="#contact"
-                className="text-gray-700 hover:text-[#4A1FB8] px-3 py-2 text-sm font-medium"
-              >
-                Contact
-              </a>
-            </div>
-          )}
+        <nav className="hidden md:flex items-center space-x-6">
+          <a href="#services" className="text-sm font-medium text-gray-700 hover:text-convertify-blue transition-colors">
+            Services
+          </a>
+          <a href="#about" className="text-sm font-medium text-gray-700 hover:text-convertify-blue transition-colors">
+            About
+          </a>
+          <a href="#process" className="text-sm font-medium text-gray-700 hover:text-convertify-blue transition-colors">
+            Our Process
+          </a>
+          <a href="#contact" className="text-sm font-medium text-gray-700 hover:text-convertify-blue transition-colors">
+            Contact
+          </a>
+          <Button className="bg-convertify-blue hover:bg-convertify-lightblue text-white rounded-md flex items-center gap-2">
+            <Phone className="h-4 w-4" />
+            <a href="tel:+15878170773">+1 (587) 817-0773</a>
+          </Button>
+        </nav>
+
+        <div className="md:hidden">
+          <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </Button>
         </div>
       </div>
 
       {/* Mobile menu */}
-      {isMobile && (
-        <div
-          className={`${
-            isOpen ? "block" : "hidden"
-          } md:hidden bg-white border-t border-gray-200`}
-        >
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link
-              to="/"
-              onClick={closeMenu}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#4A1FB8] hover:bg-gray-50"
-            >
-              Home
-            </Link>
-            <Link
-              to="/schedule"
-              onClick={closeMenu}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#4A1FB8] hover:bg-gray-50"
-            >
-              Schedule a Call
-            </Link>
-            <a
-              href="#services"
-              onClick={closeMenu}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#4A1FB8] hover:bg-gray-50"
+      {isOpen && (
+        <div className="md:hidden">
+          <div className="container mx-auto px-4 py-3 space-y-2">
+            <a 
+              href="#services" 
+              className="block py-2 text-base font-medium text-gray-700 hover:text-convertify-blue"
+              onClick={() => setIsOpen(false)}
             >
               Services
             </a>
-            <a
-              href="#about"
-              onClick={closeMenu}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#4A1FB8] hover:bg-gray-50"
+            <a 
+              href="#about" 
+              className="block py-2 text-base font-medium text-gray-700 hover:text-convertify-blue"
+              onClick={() => setIsOpen(false)}
             >
               About
             </a>
-            <a
-              href="#contact"
-              onClick={closeMenu}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#4A1FB8] hover:bg-gray-50"
+            <a 
+              href="#process" 
+              className="block py-2 text-base font-medium text-gray-700 hover:text-convertify-blue"
+              onClick={() => setIsOpen(false)}
+            >
+              Our Process
+            </a>
+            <a 
+              href="#contact" 
+              className="block py-2 text-base font-medium text-gray-700 hover:text-convertify-blue"
+              onClick={() => setIsOpen(false)}
             >
               Contact
             </a>
+            <Button className="w-full bg-convertify-blue hover:bg-convertify-lightblue text-white flex items-center justify-center gap-2">
+              <Phone className="h-4 w-4" />
+              <a href="tel:+15878170773">+1 (587) 817-0773</a>
+            </Button>
           </div>
         </div>
       )}
-    </nav>
+    </header>
   );
 };
 
