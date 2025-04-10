@@ -91,7 +91,7 @@ const Hero = () => {
               <div className="relative bg-white rounded-xl shadow-xl overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3"
-                  alt="Marketing dashboard analytics" 
+                  alt="Marketing dashboard with analytics showing growth" 
                   className="w-full h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-500"
                 />
               </div>
