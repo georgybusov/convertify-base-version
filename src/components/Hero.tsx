@@ -1,10 +1,12 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { useState, useEffect } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Hero = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const isMobile = useIsMobile();
   
   useEffect(() => {
     const videoElement = document.getElementById('hero-video') as HTMLVideoElement;
@@ -32,18 +34,22 @@ const Hero = () => {
         </video>
       </div>
       
-      <div className="container relative z-10 mx-auto px-4">
+      <div className="container relative z-10 mx-auto px-4 max-w-full">
         <div className="flex flex-col lg:flex-row items-center gap-8">
-          <div className="lg:w-1/2 lg:pr-6 mb-6 lg:mb-0">            
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-center lg:text-left text-convertify-dark leading-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              Transform Your<br />Digital Presence & <span className="text-convertify-blue">Drive Growth</span>
+          <div className="w-full lg:w-1/2 lg:pr-6 mb-6 lg:mb-0">            
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-center lg:text-left text-convertify-dark leading-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
+              {isMobile ? (
+                <>Transform Your Digital Presence & <span className="text-convertify-blue">Drive Growth</span></>
+              ) : (
+                <>Transform Your<br />Digital Presence & <span className="text-convertify-blue">Drive Growth</span></>
+              )}
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-700 mb-6 text-center lg:text-left animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6 text-center lg:text-left animate-fade-in" style={{ animationDelay: "0.3s" }}>
               Convertify helps businesses increase conversions, drive traffic, and generate more leads with data-driven marketing strategies tailored to your goals.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 justify-center lg:justify-start animate-fade-in" style={{ animationDelay: "0.4s" }}>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 justify-center lg:justify-start animate-fade-in" style={{ animationDelay: "0.4s" }}>
               <div className="flex items-center gap-2 justify-center lg:justify-start">
                 <div className="p-1 bg-convertify-blue/10 rounded-full">
                   <span className="text-lg">🚀</span>
@@ -66,7 +72,7 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in" style={{ animationDelay: "0.5s" }}>
               <Button 
-                className="bg-convertify-blue hover:bg-convertify-lightblue text-white px-8 py-6 rounded-md text-lg shadow-md"
+                className="bg-convertify-blue hover:bg-convertify-lightblue text-white px-4 sm:px-8 py-4 sm:py-6 rounded-md text-base sm:text-lg shadow-md"
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}  
               >
                 <Calendar className="mr-2 h-5 w-5" />
@@ -76,7 +82,7 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="lg:w-1/2 animate-fade-in" style={{ animationDelay: "0.6s" }}>
+          <div className="w-full lg:w-1/2 animate-fade-in" style={{ animationDelay: "0.6s" }}>
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-convertify-blue to-convertify-lightblue rounded-xl blur-md opacity-50"></div>
               <div className="relative bg-white rounded-xl shadow-xl overflow-hidden">
