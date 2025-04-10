@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
@@ -73,7 +74,7 @@ const ContactForm = () => {
                 <Mail className="h-6 w-6 text-convertify-blue mr-4 mt-1" />
                 <div>
                   <h3 className="font-semibold text-lg">Email</h3>
-                  <p className="text-gray-600">georgy.busov@gmail.com</p>
+                  <p className="text-gray-600">georgy@convertify.ca</p>
                 </div>
               </div>
               
@@ -209,7 +210,7 @@ const ContactForm = () => {
                   
                   <Button 
                     type="submit" 
-                    className="w-full bg-convertly-blue hover:bg-convertly-lightblue text-white flex items-center justify-center"
+                    className="w-full bg-convertify-blue hover:bg-convertify-lightblue text-white flex items-center justify-center"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? (

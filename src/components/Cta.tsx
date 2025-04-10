@@ -50,8 +50,8 @@ const Cta = () => {
             </Button>
             <Button 
               variant="outline" 
-              className="border-white text-convertify-blue font-bold bg-white hover:bg-white/90 group px-8 py-6 text-lg"
-              onClick={() => window.open(scheduleUrl, '_blank')}
+              className="border-white text-white font-bold bg-transparent hover:bg-white/10 group px-8 py-6 text-lg"
+              onClick={() => window.location.href = "/schedule"}
             >
               <span className="flex items-center">
                 <Calendar className="mr-2 h-5 w-5" />
