@@ -38,7 +38,7 @@ const TrustBadges = () => {
                 <Clock className="h-8 w-8 text-convertify-blue" />
               </div>
               <h3 className="text-xl font-bold mb-1">Quickest Turnaround</h3>
-              <p className="text-gray-600 text-sm">Industry-leading response times</p>
+              <p className="text-gray-600 text-sm">Industry-leading delivery times</p>
             </div>
           </div>
         </div>
