@@ -8,6 +8,7 @@ import Process from "@/components/Process";
 import Cta from "@/components/Cta";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import SimpleChat from "@/components/SimpleChat";
 
 const Index = () => {
   return (
@@ -23,6 +24,7 @@ const Index = () => {
         <ContactForm />
       </main>
       <Footer />
+      <SimpleChat />
     </div>
   );
 };

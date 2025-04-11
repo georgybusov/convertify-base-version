@@ -36,14 +36,6 @@ const Cta = () => {
                 </div>
               ))}
             </div>
-            
-            {/* Highlighted benefit */}
-            <div className="mt-6">
-              <div className="bg-white/20 p-4 rounded-lg border border-white/30">
-                <h3 className="text-white font-bold text-lg mb-1">Quickest Turnaround in the Industry</h3>
-                <p className="text-white/90 text-sm">Get results faster with our industry-leading response and implementation times.</p>
-              </div>
-            </div>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

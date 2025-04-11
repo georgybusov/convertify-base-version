@@ -1,5 +1,5 @@
 
-import { Star, CheckCircle, Award } from "lucide-react";
+import { Star, CheckCircle, Award, Clock } from "lucide-react";
 
 const TrustBadges = () => {
   return (
@@ -8,7 +8,7 @@ const TrustBadges = () => {
         <div className="flex flex-col items-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">Trusted by Businesses Across Industries</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 w-full max-w-3xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 w-full max-w-5xl">
             <div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <div className="mb-2 p-3 bg-yellow-100 rounded-full">
                 <Star className="h-8 w-8 fill-yellow-400 text-yellow-400" />
@@ -31,6 +31,14 @@ const TrustBadges = () => {
               </div>
               <h3 className="text-xl font-bold mb-1">14 Years Experience</h3>
               <p className="text-gray-600 text-sm">Industry expertise</p>
+            </div>
+            
+            <div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="mb-2 p-3 bg-convertify-blue/10 rounded-full">
+                <Clock className="h-8 w-8 text-convertify-blue" />
+              </div>
+              <h3 className="text-xl font-bold mb-1">Quickest Turnaround</h3>
+              <p className="text-gray-600 text-sm">Industry-leading response times</p>
             </div>
           </div>
         </div>
