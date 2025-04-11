@@ -37,12 +37,8 @@ const Cta = () => {
               ))}
             </div>
             
-            {/* New highlighted benefits */}
-            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5">
-              <div className="bg-white/20 p-4 rounded-lg border border-white/30">
-                <h3 className="text-white font-bold text-lg mb-1">Don't Pay Until You're Satisfied</h3>
-                <p className="text-white/90 text-sm">We only consider our job complete when you're 100% satisfied with the results.</p>
-              </div>
+            {/* Highlighted benefit */}
+            <div className="mt-6">
               <div className="bg-white/20 p-4 rounded-lg border border-white/30">
                 <h3 className="text-white font-bold text-lg mb-1">Quickest Turnaround in the Industry</h3>
                 <p className="text-white/90 text-sm">Get results faster with our industry-leading response and implementation times.</p>
