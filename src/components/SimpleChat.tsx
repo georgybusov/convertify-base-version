@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Send, X, MessageSquare } from "lucide-react";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "sonner";
 
 // Simple predefined answers for common questions
 const FAQ_ANSWERS: Record<string, string> = {
