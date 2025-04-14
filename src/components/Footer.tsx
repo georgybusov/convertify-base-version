@@ -1,4 +1,3 @@
-
 import { 
   Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin 
 } from "lucide-react";
@@ -61,8 +60,8 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-gray-400 mr-2 mt-1" />
-                <a href="mailto:georgy@convertify.ca" className="text-gray-400 hover:text-white transition-colors">
-                  georgy@convertify.ca
+                <a href="mailto:info@convertify.ca" className="text-gray-400 hover:text-white transition-colors">
+                  info@convertify.ca
                 </a>
               </li>
               <li className="flex items-start">
